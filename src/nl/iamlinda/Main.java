@@ -1,13 +1,14 @@
 package nl.iamlinda;
 
 /*
-* Dit programma is om inheritance/ polymorph te oefenen.
-* In Main class staat alles wat ik zelf heb uitgeprobeerd met uitleg erbij (in English)
-* Maak vooral je eigen creaties/ combinatie van parent-child relaties, method overriding, overloading en interfaces
-* en probeer alles uit tot je weet wat er precies wel en niet mogelijk is met inheritance en interfaces.
-* Soms staan er lege System.out.println(); in. Dat is om de output van de console een beetje leesbaar te houden.
+* This program is to practice inheritance and polymorph in Java.
+* In this main class is everything I tried myself, including comments explaining what does what.
+* Just run the program to see the effects.
+* You may clone/download this project and create your own Pokemon parent-child relations, method overriding, overloading and interfaces
+* Practice makes perfect!
+* The empty System.out.println(); are there to make the output better readable.
 *
-* Dit zijn de parent - child relaties:
+* These are the parent - child relations:
 *              Pokemon
 *              |      |
 *         Pikachu    Bulbasaur
@@ -16,7 +17,7 @@ package nl.iamlinda;
 *                     |
 *                    Venusaur
 *
-* Catchable is een interface. Alleen Raichu en Bulbasaur implementeren Catchable.
+* Catchable is an interface. Only Raichu en Bulbasaur implement Catchable.
 *
 * Good luck!
 */
@@ -42,7 +43,7 @@ public class Main {
         // What will this print?
         System.out.println("raichu's color is " + raichu.color);
         // Now if we cast raichu to Pikachu, what will it print?
-        System.out.println("raichu's color is after casting to Pikachu is " + ( (Pikachu) raichu ).color);
+        System.out.println("raichu's color after casting to Pikachu is " + ( (Pikachu) raichu ).color);
         /* Answers:
          - raichu.color will print "Brown" (from the Raichu class)
          - (Pikachu) raichu ).color will print "Yellow", taking the final variable color from the Pikachu class
